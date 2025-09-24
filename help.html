@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Center</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Help Center</h1>
+    <p>Find answers to common questions or get in touch with us.</p>
+  </header>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">How can I join as a partner?</button>
+      <div class="faq-answer">
+        <p>You can visit the <a href="partners.html">Partners page</a> and follow the instructions to apply.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Where do I find project updates?</button>
+      <div class="faq-answer">
+        <p>All project updates are posted on the <a href="projects.html">Projects page</a>.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Who can I contact for technical support?</button>
+      <div class="faq-answer">
+        <p>Our support team is available through the contact form below.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Support -->
+  <section class="contact">
+    <h2>Contact Support</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Community Project. All rights reserved.</p>
+  </footer>
+
+  <!-- FAQ Toggle Script -->
+  <script>
+    const questions = document.querySelectorAll(".faq-question");
+    questions.forEach(q => {
+      q.addEventListener("click", () => {
+        q.classList.toggle("active");
+        const answer = q.nextElementSibling;
+        if (answer.style.display === "block") {
+          answer.style.display = "none";
+        } else {
+          answer.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

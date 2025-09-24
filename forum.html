@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazungumzo - Pastoralist Connect</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🐄</span>
+        Pastoralist Connect
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="index.html" class="nav-link">Nyumbani</a></li>
+          <li><a href="market.html" class="nav-link">Soko</a></li>
+          <li><a href="climate.html" class="nav-link">Hali ya Hewa</a></li>
+          <li><a href="services.html" class="nav-link">Huduma</a></li>
+          <li><a href="innovation.html" class="nav-link">Ubunifu</a></li>
+          <li><a href="forum.html" class="nav-link active">Mazungumzo</a></li>
+          <li><a href="partners.html" class="nav-link">Ushirikiano</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-icon">💬</span>
+      <h1>Mazungumzo ya Jamii</h1>
+      <p class="hero-subtitle">Ask questions, share knowledge, and connect with fellow pastoralists.</p>
+    </div>
+  </section>
+
+  <!-- Forum Section -->
+  <main class="main-content">
+    <section class="forum-section">
+      <div class="section-header">
+        <h2>Forum Threads</h2>
+        <p>Recent discussions from the community</p>
+      </div>
+
+      <!-- Thread List -->
+      <div class="thread-list">
+        <div class="thread-card">
+          <h3><a href="#thread1">How do you manage water during drought?</a></h3>
+          <p class="thread-meta">Started by <strong>Mary from Isiolo</strong> | 12 replies | 2 days ago</p>
+        </div>
+        <div class="thread-card">
+          <h3><a href="#thread2">Best practices for cattle vaccination</a></h3>
+          <p class="thread-meta">Started by <strong>Ahmed from Garissa</strong> | 5 replies | 1 week ago</p>
+        </div>
+        <div class="thread-card">
+          <h3><a href="#thread3">Using mobile money for livestock sales</a></h3>
+          <p class="thread-meta">Started by <strong>Peter from Turkana</strong> | 8 replies | 3 days ago</p>
+        </div>
+      </div>
+
+      <!-- Sample Thread with Replies -->
+      <div id="thread1" class="thread-detail">
+        <h2>How do you manage water during drought?</h2>
+        <p class="thread-meta">Started by <strong>Mary from Isiolo</strong> | 12 replies</p>
+
+        <div class="reply">
+          <p><strong>Ahmed:</strong> We built a small sand dam in our community, it helps store water underground.</p>
+        </div>
+        <div class="reply">
+          <p><strong>Grace:</strong> I rely on solar-powered boreholes. They are costly but NGOs sometimes support.</p>
+        </div>
+        <div class="reply">
+          <p><strong>Peter:</strong> We rotate grazing areas to avoid overuse of scarce water points.</p>
+        </div>
+      </div>
+
+      <!-- New Thread Form -->
+      <div class="new-thread">
+        <h2>Start a New Discussion</h2>
+        <form action="#" method="post">
+          <label for="title">Topic Title:</label>
+          <input type="text" id="title" name="title" placeholder="Enter your discussion title" required>
+
+          <label for="content">Your Message:</label>
+          <textarea id="content" name="content" rows="4" placeholder="Write your message..." required></textarea>
+
+          <button type="submit" class="cta-button">Post Thread</button>
+        </form>
+      </div>
+
+      <!-- Reply Form -->
+      <div class="new-reply">
+        <h2>Reply to this Thread</h2>
+        <form action="#" method="post">
+          <label for="reply">Your Reply:</label>
+          <textarea id="reply" name="reply" rows="3" placeholder="Write your reply..." required></textarea>
+          <button type="submit" class="cta-button">Post Reply</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Pastoralist Connect</h4>
+        <p>Empowering Kenya's pastoralist communities through digital innovation and sustainable development.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Haraka Links</h4>
+        <ul>
+          <li><a href="market.html">Digital Market</a></li>
+          <li><a href="climate.html">Weather Alerts</a></li>
+          <li><a href="services.html">Veterinary Services</a></li>
+          <li><a href="innovation.html">Innovation Hub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Pastoralist Connect. All rights reserved. | Supporting SDG 9</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="homepage.js"></script>
+</body>
+</html>

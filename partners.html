@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partners - Pastoralist Connect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #2d6a4f;
+      padding: 1rem 2rem;
+      color: #fff;
+    }
+
+    header .logo {
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #e9f5ec;
+    }
+
+    .hero h1 {
+      margin: 0.5rem 0;
+      font-size: 2rem;
+    }
+
+    .hero p {
+      color: #555;
+    }
+
+    .partner-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+
+    .partner-card {
+      position: relative;
+      border-radius: 10px;
+      height: 200px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .partner-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Transparent overlay */
+    .partner-card .overlay {
+      width: 100%;
+      padding: 1rem;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .partner-card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    /* Individual backgrounds */
+    .undp {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/UNDP_logo.svg/512px-UNDP_logo.svg.png");
+    }
+
+    .ifad {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/IFAD_logo.svg/512px-IFAD_logo.svg.png");
+    }
+
+    .icta {
+      background-image: url("https://icta.go.ke/wp-content/uploads/2023/04/icta-logo.png");
+    }
+
+    .turkana {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/29/Coat_of_arms_of_Turkana_County.png");
+    }
+
+    .cta {
+      text-align: center;
+      margin: 3rem 1rem;
+    }
+
+    .cta h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #2d6a4f;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background: #1b4332;
+    }
+
+    footer {
+      background: #2d6a4f;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">🐄 Pastoralist Connect</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Nyumbani</a></li>
+          <li><a href="market.html">Soko</a></li>
+          <li><a href="climate.html">Hali ya Hewa</a></li>
+          <li><a href="services.html">Huduma</a></li>
+          <li><a href="innovation.html">Ubunifu</a></li>
+          <li><a href="forum.html">Mazungumzo</a></li>
+          <li><a href="partners.html" class="active">Ushirikiano</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <span class="hero-icon">🤝</span>
+    <h1>Our Partners & Collaborators</h1>
+    <p>Working together to strengthen pastoralist livelihoods and innovation.</p>
+  </section>
+
+  <!-- Partner Showcase -->
+  <main class="partners-container">
+    <div class="partner-grid">
+      
+      <div class="partner-card undp">
+        <div class="overlay">
+          <h3>UNDP</h3>
+          <p>Supporting innovation aligned with the Sustainable Development Goals, especially SDG 9.</p>
+        </div>
+      </div>
+
+      <div class="partner-card ifad">
+        <div class="overlay">
+          <h3>IFAD</h3>
+          <p>Empowering rural and pastoralist households with financial and technical support.</p>
+        </div>
+      </div>
+
+      <div class="partner-card icta">
+        <div class="overlay">
+          <h3>ICT Authority Kenya</h3>
+          <p>Promoting digital inclusion and rural connectivity for pastoralist MSMEs.</p>
+        </div>
+      </div>
+
+      <div class="partner-card turkana">
+        <div class="overlay">
+          <h3>Turkana County Government</h3>
+          <p>Local governments working on climate resilience and sustainable livestock markets.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <h2>Want to Partner With Us?</h2>
+      <p>We welcome NGOs, startups, and community organizations to collaborate in scaling impact for pastoralist communities.</p>
+      <a href="contact.html" class="cta-btn">Contact Us</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Pastoralist Connect | Strengthening partnerships for SDG 9</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastoralist Connect - Empowering Kenya's Pastoralist Communities</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🐄</span>
+                Pastoralist Connect
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Nyumbani (Home)</a></li>
+                    <li><a href="market.html" class="nav-link">Soko (Market)</a></li>
+                    <li><a href="climate.html" class="nav-link">Hali ya Hewa (Climate)</a></li>
+                    <li><a href="services.html" class="nav-link">Huduma (Services)</a></li>
+                    <li><a href="innovation.html" class="nav-link">Ubunifu (Innovation)</a></li>
+                    <li><a href="forum.html" class="nav-link">Mazungumzo (Forum)</a></li>
+                    <li><a href="partners.html" class="nav-link">Ushirikiano (Partners)</a></li>
+                    
+                    <!-- New Dropdown -->
+                    <li class="dropdown">
+                      <a href="#" class="nav-link">Zaidi (More)</a>
+                      <ul class="dropdown-content">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="training.html">Training</a></li>
+                      </ul>
+                    </li>
+                </ul>
+                
+                <div class="lang-selector">
+                    <button class="lang-button" id="langButton">🌐 Kiswahili</button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <a href="#" data-lang="sw">Kiswahili</a>
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="ma">Maasai</a>
+                        <a href="#" data-lang="tu">Turkana</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- Mobile Navigation Overlay -->
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-icon">🌍</span>
+            <h1>Kuunganisha Mifugo na Teknolojia</h1>
+            <p class="hero-subtitle">Supporting Kenya's pastoralist communities through digital innovation, sustainable practices, and collaborative partnerships</p>
+            
+            <div class="cta-container">
+                <a href="market.html" class="cta-primary">
+                    <span class="cta-icon">🏪</span>
+                    Fungua Soko
+                </a>
+                <a href="services.html" class="cta-secondary">
+                    <span class="cta-icon">🏥</span>
+                    Pata Huduma
+                </a>
+            </div>
+            
+            <!-- Quick Stats -->
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">15,000+</span>
+                    <span class="stat-label">Pastoralists Connected</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Successful Trades</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Partner Organizations</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <div class="section-header">
+                <h2>Uongozi wa Jamii za Wafugaji</h2>
+                <p>Building resilient communities through technology, innovation, and sustainable development practices aligned with SDG 9</p>
+            </div>
+
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h3>Changamoto Zetu</h3>
+                    <p>Pastoralist communities face unique challenges including unpredictable weather patterns, limited market access, insufficient veterinary services, and lack of modern preservation technologies. Our platform addresses these challenges through innovative digital solutions.</p>
+                    
+                    <h3>Suluhisho Letu</h3>
+                    <p>Pastoralist Connect bridges the gap between traditional pastoralism and modern technology, providing tools and resources that enhance livelihoods while preserving cultural values and sustainable practices.</p>
+                    
+                    
+                    </div>
+                </div>
+                
+                <div class="intro-image">
+                    <div class="image-placeholder">
+                        <span class="placeholder-icon">📱🐄</span>
+                        <p>Interactive pastoralist using mobile technology</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="features-section">
+            <div class="section-header">
+                <h2>Huduma za Msingi</h2>
+                <p>Comprehensive solutions designed specifically for pastoralist communities</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-page="market">
+                    <div class="feature-icon market-icon">🏪</div>
+                    <h3>Soko la Dijiti</h3>
+                    <p>Connect directly with buyers, access real-time livestock prices, and trade safely with transparent pricing and secure transactions.</p>
+                    <div class="feature-stats">
+                        <span>📈 Live prices updated hourly</span>
+                        <span>🔒 Secure payment system</span>
+                        <span>🤝 Verified buyers network</span>
+                    </div>
+                    <a href="market.html" class="feature-link">
+                        Fungua Soko <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="feature-card" data-page="climate">
+                    <div class="feature-icon climate-icon">🌦️</div>
+                    <h3>Habari za Hali ya Hewa</h3>
+                    <p>Receive early warnings for droughts and floods, track pasture conditions, and make informed decisions based on weather forecasts.</p>
+                    <div class="feature-stats">
+                        <span>⚠️ Early warning alerts</span>
+                        <span>🛰️ Satellite pasture data</span>
+                        <span>📊 Climate predictions</span>
+                    </div>
+                    <a href="climate.html" class="feature-link">
+                        Angalia Hali ya Hewa <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="feature-card" data-page="services">
+                    <div class="feature-icon services-icon">🏥</div>
+                    <h3>Huduma za Mifugo</h3>
+                    <p>Access veterinary care, request vaccination drives, and receive animal health tips in your local language via SMS or voice.</p>
+                    <div class="feature-stats">
+                        <span>📱 SMS/Voice in local languages</span>
+                        <span>🚐 Mobile vet services</span>
+                        <span>💉 Vaccination schedules</span>
+                    </div>
+                    <a href="services.html" class="feature-link">
+                        Pata Huduma <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="feature-card" data-page="innovation">
+                    <div class="feature-icon innovation-icon">☀️</div>
+                    <h3>Ubunifu wa Nishati</h3>
+                    <p>Discover affordable solar solutions for milk preservation, cold chain storage, and small business development opportunities.</p>
+                    <div class="feature-stats">
+                        <span>☀️ Solar preservation systems</span>
+                        <span>❄️ Cold chain solutions</span>
+                        <span>💡 Small business tools</span>
+                    </div>
+                    <a href="innovation.html" class="feature-link">
+                        Jifunze Zaidi <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="feature-card" data-page="forum">
+                    <div class="feature-icon forum-icon">💬</div>
+                    <h3>Mazungumzo ya Jamii</h3>
+                    <p>Share experiences, learn from others, and build networks with fellow pastoralists across different regions and languages.</p>
+                    <div class="feature-stats">
+                        <span>🗣️ Multi-language support</span>
+                        <span>🤝 Peer-to-peer learning</span>
+                        <span>📚 Success stories sharing</span>
+                    </div>
+                    <a href="forum.html" class="feature-link">
+                        Jiunge na Mazungumzo <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="feature-card" data-page="partners">
+                    <div class="feature-icon partners-icon">🤝</div>
+                    <h3>Ushirikiano</h3>
+                    <p>Collaborate with NGOs, county governments, and private sector partners to scale innovations and create lasting impact.</p>
+                    <div class="feature-stats">
+                        <span>🏛️ Government partnerships</span>
+                        <span>🏢 Private sector collaboration</span>
+                        <span>🌍 NGO networks</span>
+                    </div>
+                    <a href="partners.html" class="feature-link">
+                        Shiriki Nasi <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section class="impact-section">
+            <div class="section-header">
+                <h2>Mafanikio Yetu</h2>
+                <p>Real impact stories from pastoralist communities across Kenya</p>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-image">
+                        <span class="impact-icon">👨‍🌾</span>
+                    </div>
+                    <div class="impact-content">
+                        <h4>Joseph Lekuta - Kajiado County</h4>
+                        <p>"Through Pastoralist Connect, I increased my cattle prices by 30% by connecting directly with Nairobi buyers. The weather alerts helped me move my herd before the drought."</p>
+                        <div class="impact-stats">
+                            <span class="stat">+30% Income</span>
+                            <span class="stat">50 Cattle Saved</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-image">
+                        <span class="impact-icon">👩‍🌾</span>
+                    </div>
+                    <div class="impact-content">
+                        <h4>Mary Nakweu - Turkana County</h4>
+                        <p>"The solar milk cooler changed our lives. We can now preserve milk for three days and sell to the dairy cooperative at better prices."</p>
+                        <div class="impact-stats">
+                            <span class="stat">3x Milk Revenue</span>
+                            <span class="stat">Zero Waste</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-image">
+                        <span class="impact-icon">👥</span>
+                    </div>
+                    <div class="impact-content">
+                        <h4>Samburu Women's Group</h4>
+                        <p>"Mobile veterinary services reached our remote community for the first time. We vaccinated over 200 goats and learned disease prevention."</p>
+                        <div class="impact-stats">
+                            <span class="stat">200+ Animals Vaccinated</span>
+                            <span class="stat">90% Health Improvement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="final-cta">
+            <div class="cta-content">
+                <h2>Jiunge na Harakati</h2>
+                <p>Join thousands of pastoralists who are transforming their livelihoods through technology and innovation</p>
+                
+                <div class="cta-buttons">
+                    <a href="market.html" class="cta-primary">Anza Biashara Leo</a>
+                    <a href="services.html" class="cta-secondary">Pata Msaada</a>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <strong>Simu/WhatsApp</strong>
+                            <p>+254 700 123 456</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <strong>Barua Pepe</strong>
+                            <p>info@pastoralistconnect.co.ke</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Pastoralist Connect</h4>
+                <p>Empowering Kenya's pastoralist communities through digital innovation and sustainable development.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="WhatsApp">💬</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Huduma (Services)</h4>
+                <ul>
+                    <li><a href="market.html">Digital Market</a></li>
+                    <li><a href="climate.html">Weather Alerts</a></li>
+                    <li><a href="services.html">Veterinary Services</a></li>
+                    <li><a href="innovation.html">Solar Solutions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Msaada (Support)</h4>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Washirika (Partners)</h4>
+                <ul>
+                    <li><a href="partners.html">Partner with Us</a></li>
+                    <li><a href="investors.html">Investors</a></li>
+                    <li><a href="ngos.html">NGOs</a></li>
+                    <li><a href="government.html">Government</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pastoralist Connect. All rights reserved. | Supporting SDG 9: Industry, Innovation & Infrastructure</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="homepage.js"></script>
+</body>
+</html>
